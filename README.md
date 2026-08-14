@@ -2,6 +2,8 @@
 
 `folderexplorer.ps1` scans a Windows folder, calculates recursive folder sizes, and opens a local dashboard for finding disk-space usage.
 
+![image](./img/dashboard.jpg)
+
 The dashboard supports deep folder navigation, individual file listings, searching, size sorting, cleanup guidance, and moving selected folders or files to the Windows Recycle Bin.
 
 ## Requirements
