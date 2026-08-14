@@ -1,6 +1,6 @@
 # Drive Space Analyzer
 
-`folderexplorer-v2.ps1` scans a Windows folder, calculates recursive folder sizes, and opens a local dashboard for finding disk-space usage.
+`folderexplorer.ps1` scans a Windows folder, calculates recursive folder sizes, and opens a local dashboard for finding disk-space usage.
 
 The dashboard supports deep folder navigation, individual file listings, searching, size sorting, cleanup guidance, and moving selected folders or files to the Windows Recycle Bin.
 
@@ -16,7 +16,7 @@ Open PowerShell in this directory:
 
 ```powershell
 cd C:\Data\Dev\Project
-.\folderexplorer-v2.ps1
+.\folderexplorer.ps1
 ```
 
 Choose one of the displayed options:
@@ -32,7 +32,7 @@ Scanning the full drive can take significantly longer.
 Display command usage without starting a scan:
 
 ```powershell
-.\folderexplorer-v2.ps1 -h
+.\folderexplorer.ps1 -h
 ```
 
 `-Help` is also supported.
@@ -42,25 +42,25 @@ Display command usage without starting a scan:
 Analyze Local AppData:
 
 ```powershell
-.\folderexplorer-v2.ps1 -Root "C:\Users\vpandey\AppData\Local"
+.\folderexplorer.ps1 -Root "C:\Users\vpandey\AppData\Local"
 ```
 
 Analyze the entire C: drive:
 
 ```powershell
-.\folderexplorer-v2.ps1 -Root "C:\"
+.\folderexplorer.ps1 -Root "C:\"
 ```
 
 Analyze another folder:
 
 ```powershell
-.\folderexplorer-v2.ps1 -Root "C:\Data"
+.\folderexplorer.ps1 -Root "C:\Data"
 ```
 
 Optional parameters:
 
 ```powershell
-.\folderexplorer-v2.ps1 -Root "C:\Data" -MaxDepth 20 -Port 8765
+.\folderexplorer.ps1 -Root "C:\Data" -MaxDepth 20 -Port 8765
 ```
 
 | Parameter | Purpose | Default |
@@ -112,7 +112,7 @@ Run the script for the current PowerShell session with:
 
 ```powershell
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\folderexplorer-v2.ps1
+.\folderexplorer.ps1
 ```
 
 ### Some folders are missing or show incomplete sizes
